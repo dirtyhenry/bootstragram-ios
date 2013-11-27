@@ -13,5 +13,5 @@ end
 
 desc "Open"
 task :open do |t|
-  sh "open itooch.xcworkspace"
+  sh "open bootstragram.xcworkspace"
 end
