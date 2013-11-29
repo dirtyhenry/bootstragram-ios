@@ -33,6 +33,11 @@
 }
 
 
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    [[[UIAlertView alloc] initWithTitle:notification.alertAction message:notification.alertBody delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self initializeLogging];

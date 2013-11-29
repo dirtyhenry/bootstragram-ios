@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0003F4DE18488F8700A1C1C2 /* BSMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0003F4DD18488F8700A1C1C2 /* BSMapAnnotation.m */; };
 		00B77BB818467F87009ED58C /* BSGeolocAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B77BB718467F87009ED58C /* BSGeolocAlarmViewController.m */; };
 		00B77BBA18468008009ED58C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B77BB918468008009ED58C /* MapKit.framework */; };
 		00B77BBC18468037009ED58C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B77BBB18468037009ED58C /* CoreLocation.framework */; };
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0003F4DC18488F8700A1C1C2 /* BSMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMapAnnotation.h; sourceTree = "<group>"; };
+		0003F4DD18488F8700A1C1C2 /* BSMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMapAnnotation.m; sourceTree = "<group>"; };
 		00B77BB618467F87009ED58C /* BSGeolocAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGeolocAlarmViewController.h; sourceTree = "<group>"; };
 		00B77BB718467F87009ED58C /* BSGeolocAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGeolocAlarmViewController.m; sourceTree = "<group>"; };
 		00B77BB918468008009ED58C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -161,6 +164,8 @@
 				00B77BB718467F87009ED58C /* BSGeolocAlarmViewController.m */,
 				00B77BBD18468381009ED58C /* BSLocationManagerDelegate.h */,
 				00B77BBE18468381009ED58C /* BSLocationManagerDelegate.m */,
+				0003F4DC18488F8700A1C1C2 /* BSMapAnnotation.h */,
+				0003F4DD18488F8700A1C1C2 /* BSMapAnnotation.m */,
 			);
 			path = bootstragram;
 			sourceTree = "<group>";
@@ -265,6 +270,11 @@
 				TargetAttributes = {
 					00D9B942183B8AFE003164F8 = {
 						DevelopmentTeam = N77R86QZUG;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					00D9B962183B8AFE003164F8 = {
 						TestTargetID = 00D9B942183B8AFE003164F8;
@@ -351,6 +361,7 @@
 			files = (
 				00D9B97F183B8B89003164F8 /* BSMyContactViewController.m in Sources */,
 				00D9B985183B8F78003164F8 /* NSString+Levenshtein.m in Sources */,
+				0003F4DE18488F8700A1C1C2 /* BSMapAnnotation.m in Sources */,
 				00B77BB818467F87009ED58C /* BSGeolocAlarmViewController.m in Sources */,
 				00D9B955183B8AFE003164F8 /* main.m in Sources */,
 				00D9B95C183B8AFE003164F8 /* bootstragram.xcdatamodeld in Sources */,
