@@ -55,7 +55,7 @@
     
     [self.locationDelegate addObserver:self forKeyPath:@"mostRecentLocation" options:NSKeyValueObservingOptionNew context:nil];
     
-    [self.locationManager startMonitoringSignificantLocationChanges];
+    [self.locationManager startUpdatingLocation];
     
 }
 
@@ -105,7 +105,8 @@
         formatter.units = MKDistanceFormatterUnitsMetric;
         self.distance.text = [formatter stringFromDistance:distance];
         
-        if (distance < 5000 && !self.didAlarmRing) {
+        if (distance < 25000 && !self.didAlarmRing) {
+            DDLogInfo(@"LOCAL NOTIFICATION");
             UILocalNotification *notification = [[UILocalNotification alloc] init];
             notification.fireDate = [NSDate date];
             notification.alertBody = @"Wake up!";
