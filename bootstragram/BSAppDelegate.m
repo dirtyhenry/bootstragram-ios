@@ -7,6 +7,9 @@
 //
 
 #import "BSAppDelegate.h"
+#import "DDASLLogger.h"
+#import "DDTTYLogger.h"
+
 
 @implementation BSAppDelegate
 
@@ -14,8 +17,32 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+/** Initializes CocoaLumberjack logging system.
+ 
+ It is done just as specified in [the Getting Started Guide](https://github.com/robbiehanson/CocoaLumberjack/wiki/GettingStarted)
+ */
+- (void)initializeLogging {
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+#ifdef DEBUG
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor darkGrayColor] backgroundColor:[UIColor whiteColor] forFlag:LOG_FLAG_DEBUG];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor lightGrayColor] backgroundColor:[UIColor whiteColor] forFlag:LOG_FLAG_VERBOSE];
+#endif
+}
+
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    [[[UIAlertView alloc] initWithTitle:notification.alertAction message:notification.alertBody delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self initializeLogging];
+    DDLogInfo(@"Application started.");
+
     return YES;
 }
 
@@ -36,8 +63,7 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
+- (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
