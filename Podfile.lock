@@ -5,11 +5,14 @@ PODS:
   - CocoaLumberjack/Core (1.6.4)
   - CocoaLumberjack/Extensions (1.6.4):
     - CocoaLumberjack/Core
+  - GPUImage (0.1.2)
 
 DEPENDENCIES:
   - CocoaLumberjack (~> 1.6.4)
+  - GPUImage (~> 0.1.2)
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: 006187e7e3c52f505aab43d7b5ba6af35838bf23
+  CocoaLumberjack: a41a6cce03be251319e1ace1fdac5a610ce10467
+  GPUImage: 007145faa0e27f1ddbcab93e07f026c9776e2fa2
 
 COCOAPODS: 0.28.0
