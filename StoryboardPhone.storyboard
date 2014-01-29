@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A2093" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tq7-Zs-jOZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tq7-Zs-jOZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -61,6 +61,7 @@
                     <connections>
                         <segue destination="cDN-4n-kLK" kind="relationship" relationship="viewControllers" id="e8v-rL-Wr5"/>
                         <segue destination="q72-7Z-dVk" kind="relationship" relationship="viewControllers" id="VTH-gs-ySa"/>
+                        <segue destination="JYa-RC-MaP" kind="relationship" relationship="viewControllers" id="JjX-m6-hy2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woe-ds-YoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -147,6 +148,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oo5-3X-NF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="395" y="567"/>
+        </scene>
+        <!--Image Demo View Controller - GPUImage-->
+        <scene sceneID="FZ7-Q5-YNE">
+            <objects>
+                <viewController id="JYa-RC-MaP" customClass="BSGPUImageDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xrm-Kb-7th"/>
+                        <viewControllerLayoutGuide type="bottom" id="FOw-FC-ARV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P3v-mB-DKH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="GPUImage" id="2ll-Di-mmo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9R-JD-Qrg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395" y="1301"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

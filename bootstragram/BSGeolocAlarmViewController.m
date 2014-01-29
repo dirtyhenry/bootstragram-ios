@@ -53,12 +53,12 @@
     self.locationManager.distanceFilter = 100;
     DDLogDebug(@"Starting to update location");
     
-    [self.locationDelegate addObserver:self forKeyPath:@"mostRecentLocation" options:NSKeyValueObservingOptionNew context:nil];
-    
     [self.locationManager startUpdatingLocation];
-    
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.locationDelegate addObserver:self forKeyPath:@"mostRecentLocation" options:NSKeyValueObservingOptionNew context:nil];
+}
 
 - (void)viewWillDisappear:(BOOL)animated {
     [self.locationDelegate removeObserver:self forKeyPath:@"mostRecentLocation"];
