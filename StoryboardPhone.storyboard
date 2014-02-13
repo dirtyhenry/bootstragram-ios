@@ -62,6 +62,7 @@
                         <segue destination="cDN-4n-kLK" kind="relationship" relationship="viewControllers" id="e8v-rL-Wr5"/>
                         <segue destination="q72-7Z-dVk" kind="relationship" relationship="viewControllers" id="VTH-gs-ySa"/>
                         <segue destination="JYa-RC-MaP" kind="relationship" relationship="viewControllers" id="JjX-m6-hy2"/>
+                        <segue destination="1rn-qZ-Ugh" kind="relationship" relationship="viewControllers" id="QpL-Ms-wr7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woe-ds-YoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -167,6 +168,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9R-JD-Qrg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="395" y="1301"/>
+        </scene>
+        <!--Core Graphics Playground View Controller - CG Play-->
+        <scene sceneID="xg2-gd-hXh">
+            <objects>
+                <viewController id="1rn-qZ-Ugh" customClass="BSCoreGraphicsPlaygroundViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xh5-NR-Qum"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wtp-MO-hsW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NLp-ZM-8HI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7rs-65-h6u" customClass="BSFunkyView">
+                                <rect key="frame" x="104" y="104" width="108" height="144"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="CG Play" id="YFh-DA-6Ja"/>
+                    <connections>
+                        <outlet property="funkyView" destination="7rs-65-h6u" id="wlY-6Q-nf7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="frQ-vC-hTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395" y="2035"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
