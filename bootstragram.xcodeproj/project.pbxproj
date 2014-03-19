@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0003F4DE18488F8700A1C1C2 /* BSMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0003F4DD18488F8700A1C1C2 /* BSMapAnnotation.m */; };
 		0007A85F1892B9A300A98864 /* BSGPUImageDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0007A85E1892B9A300A98864 /* BSGPUImageDemoViewController.m */; };
+		009C1A8118D9EA48007FE02F /* BSDaddy.m in Sources */ = {isa = PBXBuildFile; fileRef = 009C1A8018D9EA48007FE02F /* BSDaddy.m */; };
+		009C1A8518D9EF52007FE02F /* BSSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 009C1A8418D9EF52007FE02F /* BSSon.m */; };
+		009C1A8918D9F2C0007FE02F /* BSProtectedSimulationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009C1A8818D9F2C0007FE02F /* BSProtectedSimulationViewController.m */; };
 		00B77BB818467F87009ED58C /* BSGeolocAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B77BB718467F87009ED58C /* BSGeolocAlarmViewController.m */; };
 		00B77BBA18468008009ED58C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B77BB918468008009ED58C /* MapKit.framework */; };
 		00B77BBC18468037009ED58C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B77BBB18468037009ED58C /* CoreLocation.framework */; };
@@ -53,6 +56,13 @@
 		0003F4DD18488F8700A1C1C2 /* BSMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMapAnnotation.m; sourceTree = "<group>"; };
 		0007A85D1892B9A300A98864 /* BSGPUImageDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGPUImageDemoViewController.h; sourceTree = "<group>"; };
 		0007A85E1892B9A300A98864 /* BSGPUImageDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGPUImageDemoViewController.m; sourceTree = "<group>"; };
+		009C1A7F18D9EA48007FE02F /* BSDaddy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDaddy.h; sourceTree = "<group>"; };
+		009C1A8018D9EA48007FE02F /* BSDaddy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDaddy.m; sourceTree = "<group>"; };
+		009C1A8218D9EAAE007FE02F /* BSDaddySubclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BSDaddySubclass.h; path = ../BSDaddySubclass.h; sourceTree = "<group>"; };
+		009C1A8318D9EF52007FE02F /* BSSon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSon.h; sourceTree = "<group>"; };
+		009C1A8418D9EF52007FE02F /* BSSon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSon.m; sourceTree = "<group>"; };
+		009C1A8718D9F2C0007FE02F /* BSProtectedSimulationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSProtectedSimulationViewController.h; sourceTree = "<group>"; };
+		009C1A8818D9F2C0007FE02F /* BSProtectedSimulationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSProtectedSimulationViewController.m; sourceTree = "<group>"; };
 		00B77BB618467F87009ED58C /* BSGeolocAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGeolocAlarmViewController.h; sourceTree = "<group>"; };
 		00B77BB718467F87009ED58C /* BSGeolocAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGeolocAlarmViewController.m; sourceTree = "<group>"; };
 		00B77BB918468008009ED58C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -122,6 +132,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		009C1A8618D9F2A5007FE02F /* Simulating Protected */ = {
+			isa = PBXGroup;
+			children = (
+				009C1A8718D9F2C0007FE02F /* BSProtectedSimulationViewController.h */,
+				009C1A8818D9F2C0007FE02F /* BSProtectedSimulationViewController.m */,
+				009C1A8218D9EAAE007FE02F /* BSDaddySubclass.h */,
+				009C1A8318D9EF52007FE02F /* BSSon.h */,
+				009C1A8418D9EF52007FE02F /* BSSon.m */,
+				009C1A7F18D9EA48007FE02F /* BSDaddy.h */,
+				009C1A8018D9EA48007FE02F /* BSDaddy.m */,
+			);
+			name = "Simulating Protected";
+			sourceTree = "<group>";
+		};
 		00D9B93A183B8AFE003164F8 = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +204,7 @@
 				0007A85E1892B9A300A98864 /* BSGPUImageDemoViewController.m */,
 				00FB33E418AD5B7F0065AF92 /* BSCoreGraphicsPlaygroundViewController.h */,
 				00FB33E518AD5B7F0065AF92 /* BSCoreGraphicsPlaygroundViewController.m */,
+				009C1A8618D9F2A5007FE02F /* Simulating Protected */,
 			);
 			path = bootstragram;
 			sourceTree = "<group>";
@@ -383,12 +408,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				00FB33EA18AD5BF00065AF92 /* BSFunkyView.m in Sources */,
+				009C1A8918D9F2C0007FE02F /* BSProtectedSimulationViewController.m in Sources */,
 				00D9B97F183B8B89003164F8 /* BSMyContactViewController.m in Sources */,
 				00D9B985183B8F78003164F8 /* NSString+Levenshtein.m in Sources */,
 				0003F4DE18488F8700A1C1C2 /* BSMapAnnotation.m in Sources */,
 				00B77BB818467F87009ED58C /* BSGeolocAlarmViewController.m in Sources */,
 				00FB33E618AD5B7F0065AF92 /* BSCoreGraphicsPlaygroundViewController.m in Sources */,
 				00D9B955183B8AFE003164F8 /* main.m in Sources */,
+				009C1A8118D9EA48007FE02F /* BSDaddy.m in Sources */,
+				009C1A8518D9EF52007FE02F /* BSSon.m in Sources */,
 				0007A85F1892B9A300A98864 /* BSGPUImageDemoViewController.m in Sources */,
 				00D9B95C183B8AFE003164F8 /* bootstragram.xcdatamodeld in Sources */,
 				00B77BBF18468381009ED58C /* BSLocationManagerDelegate.m in Sources */,
