@@ -5,14 +5,17 @@ PODS:
   - CocoaLumberjack/Core (1.6.4)
   - CocoaLumberjack/Extensions (1.6.4):
     - CocoaLumberjack/Core
+  - Facebook-iOS-SDK (3.13.0)
   - GPUImage (0.1.2)
 
 DEPENDENCIES:
   - CocoaLumberjack (~> 1.6.4)
+  - Facebook-iOS-SDK (~> 3.13)
   - GPUImage (~> 0.1.2)
 
 SPEC CHECKSUMS:
   CocoaLumberjack: a41a6cce03be251319e1ace1fdac5a610ce10467
+  Facebook-iOS-SDK: 5788541337dc88265bc940cb5ffb05915f9b64e3
   GPUImage: 007145faa0e27f1ddbcab93e07f026c9776e2fa2
 
-COCOAPODS: 0.28.0
+COCOAPODS: 0.29.0

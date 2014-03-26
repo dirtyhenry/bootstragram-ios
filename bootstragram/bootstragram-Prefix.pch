@@ -17,6 +17,7 @@
 #endif
 
 #import "DDLog.h"
+#import "BSUtils.h"
 #ifdef DEBUG
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 #else

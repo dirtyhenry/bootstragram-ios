@@ -16,6 +16,8 @@
 		00B77BBA18468008009ED58C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B77BB918468008009ED58C /* MapKit.framework */; };
 		00B77BBC18468037009ED58C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B77BBB18468037009ED58C /* CoreLocation.framework */; };
 		00B77BBF18468381009ED58C /* BSLocationManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B77BBE18468381009ED58C /* BSLocationManagerDelegate.m */; };
+		00BB4BD518E2C62C00FE3B25 /* BSFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BB4BD418E2C62C00FE3B25 /* BSFacebookViewController.m */; };
+		00BB4BD918E2C8E100FE3B25 /* BSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BB4BD818E2C8E100FE3B25 /* BSUtils.m */; };
 		00D9B947183B8AFE003164F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D9B946183B8AFE003164F8 /* Foundation.framework */; };
 		00D9B949183B8AFE003164F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D9B948183B8AFE003164F8 /* CoreGraphics.framework */; };
 		00D9B94B183B8AFE003164F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D9B94A183B8AFE003164F8 /* UIKit.framework */; };
@@ -69,6 +71,10 @@
 		00B77BBB18468037009ED58C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		00B77BBD18468381009ED58C /* BSLocationManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLocationManagerDelegate.h; sourceTree = "<group>"; };
 		00B77BBE18468381009ED58C /* BSLocationManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLocationManagerDelegate.m; sourceTree = "<group>"; };
+		00BB4BD318E2C62C00FE3B25 /* BSFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSFacebookViewController.h; sourceTree = "<group>"; };
+		00BB4BD418E2C62C00FE3B25 /* BSFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSFacebookViewController.m; sourceTree = "<group>"; };
+		00BB4BD718E2C8E100FE3B25 /* BSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSUtils.h; sourceTree = "<group>"; };
+		00BB4BD818E2C8E100FE3B25 /* BSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSUtils.m; sourceTree = "<group>"; };
 		00D9B943183B8AFE003164F8 /* bootstragram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bootstragram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D9B946183B8AFE003164F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		00D9B948183B8AFE003164F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +152,15 @@
 			name = "Simulating Protected";
 			sourceTree = "<group>";
 		};
+		00BB4BD618E2C63500FE3B25 /* Facebook SDK Demo */ = {
+			isa = PBXGroup;
+			children = (
+				00BB4BD318E2C62C00FE3B25 /* BSFacebookViewController.h */,
+				00BB4BD418E2C62C00FE3B25 /* BSFacebookViewController.m */,
+			);
+			name = "Facebook SDK Demo";
+			sourceTree = "<group>";
+		};
 		00D9B93A183B8AFE003164F8 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +200,8 @@
 		00D9B94E183B8AFE003164F8 /* bootstragram */ = {
 			isa = PBXGroup;
 			children = (
+				00BB4BD618E2C63500FE3B25 /* Facebook SDK Demo */,
+				009C1A8618D9F2A5007FE02F /* Simulating Protected */,
 				00FB33E718AD5BD70065AF92 /* CoreGraphics View */,
 				00D9B97B183B8B2F003164F8 /* StoryboardPhone.storyboard */,
 				00D9B957183B8AFE003164F8 /* BSAppDelegate.h */,
@@ -204,7 +221,8 @@
 				0007A85E1892B9A300A98864 /* BSGPUImageDemoViewController.m */,
 				00FB33E418AD5B7F0065AF92 /* BSCoreGraphicsPlaygroundViewController.h */,
 				00FB33E518AD5B7F0065AF92 /* BSCoreGraphicsPlaygroundViewController.m */,
-				009C1A8618D9F2A5007FE02F /* Simulating Protected */,
+				00BB4BD718E2C8E100FE3B25 /* BSUtils.h */,
+				00BB4BD818E2C8E100FE3B25 /* BSUtils.m */,
 			);
 			path = bootstragram;
 			sourceTree = "<group>";
@@ -313,7 +331,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BS;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Bootstragram;
 				TargetAttributes = {
 					00D9B942183B8AFE003164F8 = {
@@ -417,6 +435,8 @@
 				00D9B955183B8AFE003164F8 /* main.m in Sources */,
 				009C1A8118D9EA48007FE02F /* BSDaddy.m in Sources */,
 				009C1A8518D9EF52007FE02F /* BSSon.m in Sources */,
+				00BB4BD918E2C8E100FE3B25 /* BSUtils.m in Sources */,
+				00BB4BD518E2C62C00FE3B25 /* BSFacebookViewController.m in Sources */,
 				0007A85F1892B9A300A98864 /* BSGPUImageDemoViewController.m in Sources */,
 				00D9B95C183B8AFE003164F8 /* bootstragram.xcdatamodeld in Sources */,
 				00B77BBF18468381009ED58C /* BSLocationManagerDelegate.m in Sources */,
@@ -466,7 +486,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -507,7 +526,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -575,7 +593,6 @@
 		00D9B979183B8AFE003164F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bootstragram.app/bootstragram";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -598,7 +615,6 @@
 		00D9B97A183B8AFE003164F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bootstragram.app/bootstragram";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
