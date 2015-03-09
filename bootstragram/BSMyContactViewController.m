@@ -145,6 +145,7 @@
                                       otherButtonTitles:nil];
     }
     [alertView show];
+    [self.textField resignFirstResponder];
 }
 
 

@@ -1,15 +1,24 @@
 PODS:
-  - CocoaLumberjack (1.6.4):
-    - CocoaLumberjack/Core (= 1.6.4)
-    - CocoaLumberjack/Extensions (= 1.6.4)
-  - CocoaLumberjack/Core (1.6.4)
-  - CocoaLumberjack/Extensions (1.6.4):
+  - Bolts (1.1.4)
+  - CocoaLumberjack (1.6.5.1):
+    - CocoaLumberjack/Core (= 1.6.5.1)
+    - CocoaLumberjack/Extensions (= 1.6.5.1)
+  - CocoaLumberjack/Core (1.6.5.1)
+  - CocoaLumberjack/Extensions (1.6.5.1):
     - CocoaLumberjack/Core
+  - Facebook-iOS-SDK (3.23.0):
+    - Bolts (~> 1.0)
+  - GPUImage (0.1.6)
 
 DEPENDENCIES:
   - CocoaLumberjack (~> 1.6.4)
+  - Facebook-iOS-SDK (~> 3.13)
+  - GPUImage (~> 0.1.2)
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: e03e9ba0022d69a837016b471d0b702e94c7803e
+  Bolts: dd9fb8433d67f5acc3b6b4d1379bbc5513d716c1
+  CocoaLumberjack: baf4a09a3bcbdfea3363556a90104e026d3504e2
+  Facebook-iOS-SDK: 3d65f685348b789e46a9aacf92bfa85b60b63755
+  GPUImage: cecb0830bb9428f50192042e3c7b53810f51388e
 
 COCOAPODS: 0.35.0
