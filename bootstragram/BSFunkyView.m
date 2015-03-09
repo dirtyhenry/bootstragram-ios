@@ -37,8 +37,8 @@
     self.borderVertical = 1.5;
     self.borderVerticalAngle = (1.5 / 180.0 * M_PI);
     
-    self.gradientStartColor = [UIColor colorWithRed:(245.0f / 255.0f) green:(165.0f / 255.0f) blue:(44.0f / 255.0f) alpha:1.0];
-    self.gradientEndColor = [UIColor colorWithRed:(227.0f / 255.0f) green:(68.0f / 255.0f) blue:(24.0f / 255.0f) alpha:1.0];
+    self.gradientStartColor = [UIColor colorWithRed:(181.0f / 255.0f) green:(199.0f / 255.0f) blue:(167.0f / 255.0f) alpha:1.0];
+    self.gradientEndColor = [UIColor colorWithRed:(167.0f / 255.0f) green:(227.0f / 255.0f) blue:(131.0f / 255.0f) alpha:1.0];
     self.gradientStartPoint = CGPointMake(0.2f, 0.2f);
     self.gradientEndPoint = CGPointMake(0.8f, 0.8f);
 }
@@ -56,7 +56,7 @@
     CALayer *whiteLayer = [CALayer layer];
     whiteLayer.frame = CGRectMake(xDelta, yDelta, ref.size.width - 2 * xDelta, ref.size.height - 2 * yDelta);
     whiteLayer.cornerRadius = self.borderRadius;
-    whiteLayer.backgroundColor = [UIColor whiteColor].CGColor;
+    whiteLayer.backgroundColor = [UIColor colorWithRed:(100.0f / 255.0f) green:(86.0f / 255.0f) blue:(118.0f/255.0f) alpha:1.0].CGColor;
     [self.layer insertSublayer:whiteLayer atIndex:0];
     
     // Add the gradient layer
