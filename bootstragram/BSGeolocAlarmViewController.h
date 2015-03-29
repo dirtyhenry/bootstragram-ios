@@ -8,14 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <Mapbox-iOS-SDK/Mapbox.h>
+
 
 @interface BSGeolocAlarmViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (weak, nonatomic) IBOutlet UILabel *distance;
-@property (weak, nonatomic) IBOutlet UITextView *feedback;
-@property (weak, nonatomic) IBOutlet UIButton *targetButton;
+@property (weak, nonatomic) IBOutlet RMMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIButton *startGeolocAlarmButton;
+@property (weak, nonatomic) IBOutlet UIButton *startGeolocationButton;
+@property (weak, nonatomic) IBOutlet UITableView *locationDetailsTableView;
 
 - (IBAction)registerAlarm:(id)sender;
+- (IBAction)startGeolocation:(id)sender;
 
 @end

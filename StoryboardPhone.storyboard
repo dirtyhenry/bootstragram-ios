@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tq7-Zs-jOZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tq7-Zs-jOZ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--My Contact-->
@@ -82,7 +83,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're logged in as..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dch-io-lpM" userLabel="Status Label">
                                 <rect key="frame" x="20" y="100" width="220" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rP9-79-sn4">
@@ -172,65 +173,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="t0Y-gK-kpC">
-                                <rect key="frame" x="20" y="20" width="280" height="280"/>
-                            </mapView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a position" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdb-54-Te8">
-                                <rect key="frame" x="20" y="320" width="280" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cee-vc-9W5" customClass="RMMapView">
+                                <rect key="frame" x="21" y="20" width="278" height="200"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.53333333329999999" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="9CQ-0E-VhR"/>
-                                    <constraint firstAttribute="height" constant="21" id="y5S-db-Eaw"/>
+                                    <constraint firstAttribute="height" constant="200" id="iss-2f-Ozc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b7-uJ-Pos">
-                                <rect key="frame" x="20" y="347" width="280" height="30"/>
-                                <state key="normal" title="Validate">
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96D-7y-XcP">
+                                <rect key="frame" x="16" y="228" width="121" height="30"/>
+                                <state key="normal" title="Start Geolocation">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="registerAlarm:" destination="cDN-4n-kLK" eventType="touchUpInside" id="zmz-Zu-74A"/>
+                                    <action selector="startGeolocation:" destination="cDN-4n-kLK" eventType="touchUpInside" id="EsI-6m-u7o"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tX2-ng-MDo">
-                                <rect key="frame" x="20" y="385" width="280" height="128"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="Wo2-LU-cQ9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S0-in-N6K">
+                                <rect key="frame" x="145" y="228" width="104" height="30"/>
+                                <state key="normal" title="Start Geoalarm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerAlarm:" destination="cDN-4n-kLK" eventType="touchUpInside" id="YU3-7C-NgZ"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HxY-4J-8lB">
+                                <rect key="frame" x="0.0" y="266" width="320" height="253"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BSGeolocAlarmViewCell" textLabel="7oD-wD-M3S" detailTextLabel="5Ro-FW-H9D" style="IBUITableViewCellStyleValue2" id="BlP-Yj-JDK">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BlP-Yj-JDK" id="xap-6V-S8C">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7oD-wD-M3S">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Ro-FW-H9D">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Tdb-54-Te8" firstAttribute="leading" secondItem="4W2-rr-j9I" secondAttribute="leading" constant="20" id="BSH-kf-CBI"/>
-                            <constraint firstAttribute="centerX" secondItem="3b7-uJ-Pos" secondAttribute="centerX" id="FDd-d5-wTK"/>
-                            <constraint firstAttribute="trailing" secondItem="t0Y-gK-kpC" secondAttribute="trailing" constant="20" id="HuY-1j-BMU"/>
-                            <constraint firstItem="t0Y-gK-kpC" firstAttribute="leading" secondItem="4W2-rr-j9I" secondAttribute="leading" constant="20" id="KId-Yr-Zzg"/>
-                            <constraint firstAttribute="trailing" secondItem="Tdb-54-Te8" secondAttribute="trailing" constant="20" id="M2Z-yO-2NP"/>
-                            <constraint firstItem="t0Y-gK-kpC" firstAttribute="top" secondItem="WSp-3o-Vrx" secondAttribute="bottom" id="blt-Pe-pim"/>
-                            <constraint firstAttribute="trailing" secondItem="tX2-ng-MDo" secondAttribute="trailing" constant="20" id="dVG-nU-lnF"/>
-                            <constraint firstItem="tX2-ng-MDo" firstAttribute="top" secondItem="3b7-uJ-Pos" secondAttribute="bottom" constant="8" id="ghA-2p-BAK"/>
-                            <constraint firstAttribute="trailing" secondItem="3b7-uJ-Pos" secondAttribute="trailing" constant="20" id="hIN-PO-MEM"/>
-                            <constraint firstAttribute="centerX" secondItem="Tdb-54-Te8" secondAttribute="centerX" id="hpN-a9-ouY"/>
-                            <constraint firstAttribute="centerX" secondItem="t0Y-gK-kpC" secondAttribute="centerX" id="mj6-xs-Q95"/>
-                            <constraint firstItem="3b7-uJ-Pos" firstAttribute="leading" secondItem="4W2-rr-j9I" secondAttribute="leading" constant="20" id="oA6-Bf-SEi"/>
-                            <constraint firstItem="3b7-uJ-Pos" firstAttribute="top" secondItem="Tdb-54-Te8" secondAttribute="bottom" constant="6" id="qpP-K7-hbf"/>
-                            <constraint firstItem="tX2-ng-MDo" firstAttribute="leading" secondItem="4W2-rr-j9I" secondAttribute="leading" constant="20" id="s7j-wH-afd"/>
-                            <constraint firstItem="Tdb-54-Te8" firstAttribute="top" secondItem="t0Y-gK-kpC" secondAttribute="bottom" constant="20" id="ulg-WP-8zQ"/>
-                            <constraint firstItem="9sq-PG-zRC" firstAttribute="top" secondItem="tX2-ng-MDo" secondAttribute="bottom" constant="6" id="xkf-Zn-7X0"/>
-                            <constraint firstItem="3b7-uJ-Pos" firstAttribute="top" secondItem="Tdb-54-Te8" secondAttribute="bottom" constant="6" id="zcR-3j-oDE"/>
+                            <constraint firstItem="96D-7y-XcP" firstAttribute="leading" secondItem="4W2-rr-j9I" secondAttribute="leading" constant="16" id="7Ea-in-47d"/>
+                            <constraint firstAttribute="trailing" secondItem="HxY-4J-8lB" secondAttribute="trailing" id="7Xy-um-T0N"/>
+                            <constraint firstItem="HxY-4J-8lB" firstAttribute="top" secondItem="8S0-in-N6K" secondAttribute="bottom" constant="8" id="9wM-Gd-0ez"/>
+                            <constraint firstItem="8S0-in-N6K" firstAttribute="top" secondItem="Cee-vc-9W5" secondAttribute="bottom" constant="8" id="Q2z-Lq-zMH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cee-vc-9W5" secondAttribute="trailing" constant="5" id="SjC-wr-KPO"/>
+                            <constraint firstItem="96D-7y-XcP" firstAttribute="top" secondItem="Cee-vc-9W5" secondAttribute="bottom" constant="8" id="VZJ-sf-Px4"/>
+                            <constraint firstItem="HxY-4J-8lB" firstAttribute="leading" secondItem="4W2-rr-j9I" secondAttribute="leading" id="c5C-EF-R7B"/>
+                            <constraint firstItem="9sq-PG-zRC" firstAttribute="top" secondItem="HxY-4J-8lB" secondAttribute="bottom" id="kV9-jL-2aG"/>
+                            <constraint firstItem="Cee-vc-9W5" firstAttribute="top" secondItem="WSp-3o-Vrx" secondAttribute="bottom" id="mYt-gI-04n"/>
+                            <constraint firstItem="Cee-vc-9W5" firstAttribute="leading" secondItem="4W2-rr-j9I" secondAttribute="leadingMargin" constant="5" id="odO-kM-zZx"/>
+                            <constraint firstItem="8S0-in-N6K" firstAttribute="leading" secondItem="96D-7y-XcP" secondAttribute="trailing" constant="8" id="phO-0s-vqQ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="bCk-cd-3RB"/>
                     <connections>
-                        <outlet property="distance" destination="Tdb-54-Te8" id="lRp-he-X14"/>
-                        <outlet property="feedback" destination="tX2-ng-MDo" id="DnD-PT-0SE"/>
-                        <outlet property="mapView" destination="t0Y-gK-kpC" id="BeA-4m-9IU"/>
-                        <outlet property="targetButton" destination="3b7-uJ-Pos" id="uxf-t2-szD"/>
+                        <outlet property="locationDetailsTableView" destination="HxY-4J-8lB" id="q31-5B-JL8"/>
+                        <outlet property="mapView" destination="Cee-vc-9W5" id="fPr-gN-W8m"/>
+                        <outlet property="startGeolocAlarmButton" destination="8S0-in-N6K" id="byx-43-WKP"/>
+                        <outlet property="startGeolocationButton" destination="96D-7y-XcP" id="Bu1-KW-pXS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oo5-3X-NF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -271,13 +287,13 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="George McFly says:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVf-TR-Z1Y">
                                 <rect key="frame" x="20" y="40" width="152" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Marty McFly says:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfd-CB-zaX">
                                 <rect key="frame" x="20" y="110" width="140" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="YLJ-9H-VwJ">
