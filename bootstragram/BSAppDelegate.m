@@ -9,7 +9,7 @@
 #import "BSAppDelegate.h"
 #import "DDASLLogger.h"
 #import "DDTTYLogger.h"
-# import <FacebookSDK/FacebookSDK.h>
+//#import <FacebookSDK/FacebookSDK.h>
 
 
 @implementation BSAppDelegate
@@ -44,7 +44,7 @@
     [self initializeLogging];
 
     // Load Facebook SDK
-    [FBLoginView class];
+    //[FBLoginView class];
 
     DDLogInfo(@"Application started.");
 
@@ -176,14 +176,15 @@
 
 #pragma mark - URL Management
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    // Call FBAppCall's handleOpenURL:sourceApplication to handle Facebook app responses
-    BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
-    DDLogVerbose(@"Facebook handled callback: %@", NSStringFromBOOL(wasHandled));
-
-    // You can add your app-specific url handling code here if needed
-
-    return wasHandled;
-}
+// TODO: fix with FBSDKCoreKit
+//- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+//    // Call FBAppCall's handleOpenURL:sourceApplication to handle Facebook app responses
+//    //BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+//    //DDLogVerbose(@"Facebook handled callback: %@", NSStringFromBOOL(wasHandled));
+//
+//    // You can add your app-specific url handling code here if needed
+//
+//    return wasHandled;
+//}
 
 @end

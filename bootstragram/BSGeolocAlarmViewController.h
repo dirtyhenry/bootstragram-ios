@@ -6,14 +6,12 @@
 //  Copyright (c) 2013 Bootstragram. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
-#import <Mapbox-iOS-SDK/Mapbox.h>
-
+@import UIKit;
+@import MapKit;
 
 @interface BSGeolocAlarmViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet RMMapView *mapView;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *startGeolocAlarmButton;
 @property (weak, nonatomic) IBOutlet UIButton *startGeolocationButton;
 @property (weak, nonatomic) IBOutlet UITableView *locationDetailsTableView;

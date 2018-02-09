@@ -18,6 +18,8 @@
 		002510631AADF3CC00175A79 /* BSProtectedSimulationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025105E1AADF3CC00175A79 /* BSProtectedSimulationViewController.m */; };
 		002510641AADF3CC00175A79 /* BSSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 002510601AADF3CC00175A79 /* BSSon.m */; };
 		002510651AADF3CC00175A79 /* BSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 002510621AADF3CC00175A79 /* BSUtils.m */; };
+		005938671CE637D200DEA64B /* BSCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005938661CE637D200DEA64B /* BSCollectionViewController.m */; };
+		0059386A1CE63CD400DEA64B /* BSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 005938691CE63CD400DEA64B /* BSCollectionViewCell.m */; };
 		00D9B947183B8AFE003164F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D9B946183B8AFE003164F8 /* Foundation.framework */; };
 		00D9B949183B8AFE003164F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D9B948183B8AFE003164F8 /* CoreGraphics.framework */; };
 		00D9B94B183B8AFE003164F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D9B94A183B8AFE003164F8 /* UIKit.framework */; };
@@ -38,7 +40,8 @@
 		00D9B985183B8F78003164F8 /* NSString+Levenshtein.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D9B983183B8F78003164F8 /* NSString+Levenshtein.m */; };
 		00D9B986183B8F78003164F8 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 00D9B984183B8F78003164F8 /* readme.md */; };
 		00D9B988183B907B003164F8 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D9B987183B907B003164F8 /* AddressBook.framework */; };
-		42FADD2FE90946869C36E5B6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 464959B6D3E54ABBAA60B381 /* libPods.a */; };
+		2F9A83D6C9B4EB217BCE5D9B /* Pods_bootstragram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8172A6E468997F037DA286E /* Pods_bootstragram.framework */; };
+		4BFE388A5AC619BFCB51F897 /* Pods_bootstragramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1889811E804F65012FBEBF5 /* Pods_bootstragramTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,10 @@
 		002510611AADF3CC00175A79 /* BSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSUtils.h; sourceTree = "<group>"; };
 		002510621AADF3CC00175A79 /* BSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSUtils.m; sourceTree = "<group>"; };
 		002510661AADF40C00175A79 /* BSDaddySubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDaddySubclass.h; sourceTree = "<group>"; };
+		005938651CE637D200DEA64B /* BSCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCollectionViewController.h; sourceTree = "<group>"; };
+		005938661CE637D200DEA64B /* BSCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCollectionViewController.m; sourceTree = "<group>"; };
+		005938681CE63CD400DEA64B /* BSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCollectionViewCell.h; sourceTree = "<group>"; };
+		005938691CE63CD400DEA64B /* BSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCollectionViewCell.m; sourceTree = "<group>"; };
 		00D9B943183B8AFE003164F8 /* bootstragram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bootstragram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D9B946183B8AFE003164F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		00D9B948183B8AFE003164F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,9 +107,12 @@
 		00D9B983183B8F78003164F8 /* NSString+Levenshtein.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Levenshtein.m"; sourceTree = "<group>"; };
 		00D9B984183B8F78003164F8 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
 		00D9B987183B907B003164F8 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		464959B6D3E54ABBAA60B381 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		699D35C118959E541E87DC60 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		69AE1DE5EB4DD9421B80B781 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2C50481A976F81419D2CE2F7 /* Pods-bootstragram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootstragram.release.xcconfig"; path = "Pods/Target Support Files/Pods-bootstragram/Pods-bootstragram.release.xcconfig"; sourceTree = "<group>"; };
+		A1889811E804F65012FBEBF5 /* Pods_bootstragramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bootstragramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7269A7F5050D07E96B3A9A1 /* Pods-bootstragram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootstragram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bootstragram/Pods-bootstragram.debug.xcconfig"; sourceTree = "<group>"; };
+		C5C95B4A4AE0DA7E42DB8A7B /* Pods-bootstragramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootstragramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-bootstragramTests/Pods-bootstragramTests.release.xcconfig"; sourceTree = "<group>"; };
+		E09F5074811AE3C8ADB0850B /* Pods-bootstragramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bootstragramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bootstragramTests/Pods-bootstragramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8172A6E468997F037DA286E /* Pods_bootstragram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bootstragram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +125,7 @@
 				00D9B94D183B8AFE003164F8 /* CoreData.framework in Frameworks */,
 				00D9B94B183B8AFE003164F8 /* UIKit.framework in Frameworks */,
 				00D9B947183B8AFE003164F8 /* Foundation.framework in Frameworks */,
-				42FADD2FE90946869C36E5B6 /* libPods.a in Frameworks */,
+				2F9A83D6C9B4EB217BCE5D9B /* Pods_bootstragram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,21 +137,13 @@
 				00D9B968183B8AFE003164F8 /* CoreData.framework in Frameworks */,
 				00D9B967183B8AFE003164F8 /* UIKit.framework in Frameworks */,
 				00D9B966183B8AFE003164F8 /* Foundation.framework in Frameworks */,
+				4BFE388A5AC619BFCB51F897 /* Pods_bootstragramTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		005D347CB7B443196C35947D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				699D35C118959E541E87DC60 /* Pods.debug.xcconfig */,
-				69AE1DE5EB4DD9421B80B781 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		00D9B93A183B8AFE003164F8 = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +151,7 @@
 				00D9B96B183B8AFE003164F8 /* bootstragramTests */,
 				00D9B945183B8AFE003164F8 /* Frameworks */,
 				00D9B944183B8AFE003164F8 /* Products */,
-				005D347CB7B443196C35947D /* Pods */,
+				B1B89626CB32F9969422BEEF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,7 +173,8 @@
 				00D9B94A183B8AFE003164F8 /* UIKit.framework */,
 				00D9B94C183B8AFE003164F8 /* CoreData.framework */,
 				00D9B964183B8AFE003164F8 /* XCTest.framework */,
-				464959B6D3E54ABBAA60B381 /* libPods.a */,
+				F8172A6E468997F037DA286E /* Pods_bootstragram.framework */,
+				A1889811E804F65012FBEBF5 /* Pods_bootstragramTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,6 +213,10 @@
 				00D9B94F183B8AFE003164F8 /* Supporting Files */,
 				00D9B97D183B8B89003164F8 /* BSMyContactViewController.h */,
 				00D9B97E183B8B89003164F8 /* BSMyContactViewController.m */,
+				005938651CE637D200DEA64B /* BSCollectionViewController.h */,
+				005938661CE637D200DEA64B /* BSCollectionViewController.m */,
+				005938681CE63CD400DEA64B /* BSCollectionViewCell.h */,
+				005938691CE63CD400DEA64B /* BSCollectionViewCell.m */,
 			);
 			path = bootstragram;
 			sourceTree = "<group>";
@@ -262,6 +269,17 @@
 			path = "gist1515464-55234426c5ff95332efc13c757e46a5452b4898a";
 			sourceTree = "<group>";
 		};
+		B1B89626CB32F9969422BEEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7269A7F5050D07E96B3A9A1 /* Pods-bootstragram.debug.xcconfig */,
+				2C50481A976F81419D2CE2F7 /* Pods-bootstragram.release.xcconfig */,
+				E09F5074811AE3C8ADB0850B /* Pods-bootstragramTests.debug.xcconfig */,
+				C5C95B4A4AE0DA7E42DB8A7B /* Pods-bootstragramTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,11 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00D9B975183B8AFE003164F8 /* Build configuration list for PBXNativeTarget "bootstragram" */;
 			buildPhases = (
-				C6F5505ACE844E6389A3CB43 /* Check Pods Manifest.lock */,
+				25C816C252A99AF517880E01 /* [CP] Check Pods Manifest.lock */,
 				00D9B93F183B8AFE003164F8 /* Sources */,
 				00D9B940183B8AFE003164F8 /* Frameworks */,
 				00D9B941183B8AFE003164F8 /* Resources */,
-				FEA32CB11605467DA5A6F4AA /* Copy Pods Resources */,
+				3A67882E25BA223E8FAD51C3 /* [CP] Embed Pods Frameworks */,
+				191A54497507AF772EBF0DDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,9 +307,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00D9B978183B8AFE003164F8 /* Build configuration list for PBXNativeTarget "bootstragramTests" */;
 			buildPhases = (
+				F817EF4B884A1C953BED054C /* [CP] Check Pods Manifest.lock */,
 				00D9B95F183B8AFE003164F8 /* Sources */,
 				00D9B960183B8AFE003164F8 /* Frameworks */,
 				00D9B961183B8AFE003164F8 /* Resources */,
+				95A7B76148DD9ED92338EA29 /* [CP] Embed Pods Frameworks */,
+				FE8C7D7426AE1B1B6D545E82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,11 +331,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BS;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Bootstragram;
 				TargetAttributes = {
 					00D9B942183B8AFE003164F8 = {
-						DevelopmentTeam = N77R86QZUG;
+						DevelopmentTeam = 7HX93AP7WL;
+						ProvisioningStyle = Automatic;
 					};
 					00D9B962183B8AFE003164F8 = {
 						TestTargetID = 00D9B942183B8AFE003164F8;
@@ -361,34 +384,116 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C6F5505ACE844E6389A3CB43 /* Check Pods Manifest.lock */ = {
+		191A54497507AF772EBF0DDA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-bootstragram/Pods-bootstragram-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Mapbox-iOS-SDK/Mapbox.bundle",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Mapbox.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bootstragram/Pods-bootstragram-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FEA32CB11605467DA5A6F4AA /* Copy Pods Resources */ = {
+		25C816C252A99AF517880E01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bootstragram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A67882E25BA223E8FAD51C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-bootstragram/Pods-bootstragram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BSGUtilities/BSGUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+				"${BUILT_PRODUCTS_DIR}/MMMarkdown/MMMarkdown.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSGUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMMarkdown.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bootstragram/Pods-bootstragram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95A7B76148DD9ED92338EA29 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bootstragramTests/Pods-bootstragramTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F817EF4B884A1C953BED054C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bootstragramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE8C7D7426AE1B1B6D545E82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bootstragramTests/Pods-bootstragramTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -413,7 +518,9 @@
 				002510561AADF3BD00175A79 /* BSDaddy.m in Sources */,
 				0025105A1AADF3BD00175A79 /* BSGPUImageDemoViewController.m in Sources */,
 				0025105C1AADF3BD00175A79 /* BSMapAnnotation.m in Sources */,
+				0059386A1CE63CD400DEA64B /* BSCollectionViewCell.m in Sources */,
 				00D9B959183B8AFE003164F8 /* BSAppDelegate.m in Sources */,
+				005938671CE637D200DEA64B /* BSCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,19 +570,31 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -488,7 +607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -503,26 +622,37 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -531,40 +661,53 @@
 		};
 		00D9B976183B8AFE003164F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 699D35C118959E541E87DC60 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A7269A7F5050D07E96B3A9A1 /* Pods-bootstragram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HX93AP7WL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bootstragram/bootstragram-Prefix.pch";
 				INFOPLIST_FILE = "bootstragram/bootstragram-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bootstragram.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		00D9B977183B8AFE003164F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69AE1DE5EB4DD9421B80B781 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 2C50481A976F81419D2CE2F7 /* Pods-bootstragram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HX93AP7WL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bootstragram/bootstragram-Prefix.pch";
 				INFOPLIST_FILE = "bootstragram/bootstragram-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bootstragram.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		00D9B979183B8AFE003164F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09F5074811AE3C8ADB0850B /* Pods-bootstragramTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bootstragram.app/bootstragram";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -579,6 +722,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "bootstragramTests/bootstragramTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bootstragram.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -587,6 +731,7 @@
 		};
 		00D9B97A183B8AFE003164F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C95B4A4AE0DA7E42DB8A7B /* Pods-bootstragramTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/bootstragram.app/bootstragram";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -597,6 +742,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bootstragram/bootstragram-Prefix.pch";
 				INFOPLIST_FILE = "bootstragramTests/bootstragramTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bootstragram.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

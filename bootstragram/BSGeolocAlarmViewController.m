@@ -45,10 +45,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [RMConfiguration sharedInstance].accessToken = @"pk.eyJ1IjoiYm9vdHN0cmFncmFtIiwiYSI6ImpTOHMzOTQifQ.xqcczZHuszpS_RVVudn4NA";
-    RMMapboxSource *mapboxSource = [[RMMapboxSource alloc] initWithMapID:@"bootstragram.ljbam718"];
-    [self.mapView addTileSource:mapboxSource];
-
     self.minAltitude = DBL_MAX;
     self.maxAltitude = DBL_MIN;
 
@@ -81,7 +77,7 @@
         } else if ([fieldName isEqualToString:@"altitude"]) {
             myCell.detailTextLabel.text = [NSString stringWithFormat:@"%.02f m (min: %.02f, max: %.02f)", self.locationDelegate.mostRecentLocation.altitude, self.minAltitude, self.maxAltitude];
         } else if ([fieldName isEqualToString:@"floor"]) {
-            myCell.detailTextLabel.text = [NSString stringWithFormat:@"%d", self.locationDelegate.mostRecentLocation.floor.level];
+            myCell.detailTextLabel.text = [NSString stringWithFormat:@"%ld", self.locationDelegate.mostRecentLocation.floor.level];
         } else if ([fieldName isEqualToString:@"horizontalAccuracy"]) {
             myCell.detailTextLabel.text = [NSString stringWithFormat:@"%f", self.locationDelegate.mostRecentLocation.horizontalAccuracy];
         } else if ([fieldName isEqualToString:@"verticalAccuracy"]) {
@@ -196,11 +192,11 @@
     [self updateViews];
     self.startGeolocationButton.enabled = NO;
     [self.targetLocationAnnotation setCoordinate:alarmPosition];
-    //[self.mapView addAnnotation:self.targetLocationAnnotation];
+    [self.mapView addAnnotation:self.targetLocationAnnotation];
 }
 
 
-- (NSUInteger)supportedInterfaceOrientations {
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
 }
 

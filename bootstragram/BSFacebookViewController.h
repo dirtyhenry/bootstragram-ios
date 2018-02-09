@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FacebookSDK/FacebookSDK.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 
-@interface BSFacebookViewController : UIViewController<FBLoginViewDelegate>
+//TODO: update this class for FBSDKCoreKit
+
+@interface BSFacebookViewController : UIViewController //<FBLoginViewDelegate>
 
 - (IBAction)shareAction:(id)sender;
 

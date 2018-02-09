@@ -1,49 +1,37 @@
 PODS:
-  - Bolts (1.1.4)
-  - BSGUtilities (0.3.0):
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - BSGUtilities (0.5.0):
     - MMMarkdown (~> 0.3)
-  - CocoaLumberjack (1.6.5.1):
-    - CocoaLumberjack/Core (= 1.6.5.1)
-    - CocoaLumberjack/Extensions (= 1.6.5.1)
-  - CocoaLumberjack/Core (1.6.5.1)
-  - CocoaLumberjack/Extensions (1.6.5.1):
-    - CocoaLumberjack/Core
-  - Facebook-iOS-SDK (3.23.0):
-    - Bolts (~> 1.0)
-  - FMDB (2.3):
-    - FMDB/standard (= 2.3)
-  - FMDB/common (2.3)
-  - FMDB/standard (2.3):
-    - FMDB/common
-  - GPUImage (0.1.6)
-  - GRMustache (7.3.0):
-    - JRSwizzle (~> 1.0)
-  - JRSwizzle (1.0)
-  - Mapbox-iOS-SDK (1.6.0):
-    - FMDB (= 2.3)
-    - GRMustache (= 7.3.0)
-    - SMCalloutView (= 2.0)
-  - MMMarkdown (0.4.1)
-  - SMCalloutView (2.0)
+  - CocoaLumberjack (3.4.1):
+    - CocoaLumberjack/Default (= 3.4.1)
+    - CocoaLumberjack/Extensions (= 3.4.1)
+  - CocoaLumberjack/Default (3.4.1)
+  - CocoaLumberjack/Extensions (3.4.1):
+    - CocoaLumberjack/Default
+  - FBSDKCoreKit (4.30.0):
+    - Bolts (~> 1.7)
+  - GPUImage (0.1.7)
+  - MMMarkdown (0.5.5)
 
 DEPENDENCIES:
   - BSGUtilities
-  - CocoaLumberjack (~> 1.6.4)
-  - Facebook-iOS-SDK (~> 3.13)
-  - GPUImage (~> 0.1.2)
-  - Mapbox-iOS-SDK
+  - CocoaLumberjack
+  - FBSDKCoreKit
+  - GPUImage
 
 SPEC CHECKSUMS:
-  Bolts: dd9fb8433d67f5acc3b6b4d1379bbc5513d716c1
-  BSGUtilities: f58d3aaac1b25af96d0e37e434d1c5eb94a3d0a1
-  CocoaLumberjack: baf4a09a3bcbdfea3363556a90104e026d3504e2
-  Facebook-iOS-SDK: 3d65f685348b789e46a9aacf92bfa85b60b63755
-  FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
-  GPUImage: cecb0830bb9428f50192042e3c7b53810f51388e
-  GRMustache: efecd3b603f0a7a99cf6bdf3998782ee0c465726
-  JRSwizzle: 30da7a2c539a4ebf954b16d15f6dd8221c9f6fa5
-  Mapbox-iOS-SDK: 189a35013e100f1464cd2f9f6c489d6326fbb927
-  MMMarkdown: c82c9024dd80f088312909023dd6d6d013bd668f
-  SMCalloutView: c1906604d47c058400ade5c9d52ab98aa77b7e76
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  BSGUtilities: deb6b2e0b38ad8492137eca775c68dafb48e5660
+  CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
+  FBSDKCoreKit: 7c4bba2877781a131ab5d54c0a78c405d4307b62
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
 
-COCOAPODS: 0.35.0
+PODFILE CHECKSUM: 0586fa66e5870892c4db2fb1c5b942a7a208237a
+
+COCOAPODS: 1.4.0
