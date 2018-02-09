@@ -37,12 +37,16 @@
 	<string>Bootstragram Demo</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSContactsUsageDescription</key>
+	<string>Demo of auto-email correction </string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Geolocation please?</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
 	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>StoryboardPhone</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -62,7 +66,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSContactsUsageDescription</key>
-	<string>Demo of auto-email correction </string>
+	<key>NSCameraUsageDescription</key>
+	<string>For GPUImage demo</string>
 </dict>
 </plist>
