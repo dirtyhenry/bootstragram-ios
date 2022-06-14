@@ -92,6 +92,7 @@ PLATFORMS
 
 DEPENDENCIES
   cocoapods
+  cocoapods-downloader (>= 1.6.2)
 
 BUNDLED WITH
    2.2.22
