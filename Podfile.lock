@@ -1,37 +1,37 @@
 PODS:
-  - Bolts (1.9.0):
-    - Bolts/AppLinks (= 1.9.0)
-    - Bolts/Tasks (= 1.9.0)
-  - Bolts/AppLinks (1.9.0):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.9.0)
   - BSGUtilities (0.5.0):
     - MMMarkdown (~> 0.3)
-  - CocoaLumberjack (3.4.1):
-    - CocoaLumberjack/Default (= 3.4.1)
-    - CocoaLumberjack/Extensions (= 3.4.1)
-  - CocoaLumberjack/Default (3.4.1)
-  - CocoaLumberjack/Extensions (3.4.1):
-    - CocoaLumberjack/Default
-  - FBSDKCoreKit (4.30.0):
-    - Bolts (~> 1.7)
+  - FBAEMKit (12.0.2):
+    - FBSDKCoreKit_Basics (= 12.0.2)
+  - FBSDKCoreKit (12.0.2):
+    - FBAEMKit (= 12.0.2)
+    - FBSDKCoreKit_Basics (= 12.0.2)
+  - FBSDKCoreKit_Basics (12.0.2)
   - GPUImage (0.1.7)
   - MMMarkdown (0.5.5)
 
 DEPENDENCIES:
   - BSGUtilities
-  - CocoaLumberjack
   - FBSDKCoreKit
   - GPUImage
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BSGUtilities
+    - FBAEMKit
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
+    - GPUImage
+    - MMMarkdown
+
 SPEC CHECKSUMS:
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   BSGUtilities: deb6b2e0b38ad8492137eca775c68dafb48e5660
-  CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
-  FBSDKCoreKit: 7c4bba2877781a131ab5d54c0a78c405d4307b62
+  FBAEMKit: c6b8ddf8371640fcd1a3b844d0f8884c8f334cea
+  FBSDKCoreKit: 506c0fd1c09a3075f62be8fa36bdd921c563daa9
+  FBSDKCoreKit_Basics: c0701d1634c944d60dd3c6361d66dbd0e707a456
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
 
-PODFILE CHECKSUM: 0586fa66e5870892c4db2fb1c5b942a7a208237a
+PODFILE CHECKSUM: 39163a1d1b667e44498c68e2cd1f5b8d2493077a
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.11.3
