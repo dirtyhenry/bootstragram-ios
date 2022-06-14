@@ -6,7 +6,7 @@ platform :ios, '9.0'
 target 'bootstragram' do
   use_frameworks!
 
-  pod 'CocoaLumberjack'
+  # pod 'CocoaLumberjack'
   pod 'GPUImage'
   pod 'FBSDKCoreKit'
   pod 'BSGUtilities'

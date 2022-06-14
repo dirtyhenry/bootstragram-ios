@@ -101,16 +101,16 @@
 - (IBAction)startGeolocation:(id)sender {
     CLAuthorizationStatus coreLocationAuthorizationStatus = [CLLocationManager authorizationStatus];
     if (coreLocationAuthorizationStatus == kCLAuthorizationStatusRestricted || coreLocationAuthorizationStatus == kCLAuthorizationStatusDenied) {
-        DDLogError(@"CL's authorization doesn't permit the app to use geolocation");
+        NSLog(@"CL's authorization doesn't permit the app to use geolocation");
     } else {
         if (coreLocationAuthorizationStatus == kCLAuthorizationStatusNotDetermined) {
             [self.locationManager requestWhenInUseAuthorization];
         }
 
-        DDLogDebug(@"coreLocationAuthorizationStatus: %d", coreLocationAuthorizationStatus);
+        NSLog(@"coreLocationAuthorizationStatus: %d", coreLocationAuthorizationStatus);
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         self.locationManager.distanceFilter = kCLDistanceFilterNone;
-        DDLogDebug(@"Starting to update location");
+        NSLog(@"Starting to update location");
 
         [self.locationManager startUpdatingLocation];
     }
@@ -134,7 +134,7 @@
 
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    DDLogDebug(@"Notification");
+    NSLog(@"Notification");
     [self updateViews];
 }
 
@@ -145,7 +145,7 @@
     // - or whenever we get an update, if the target location was set (otherwise it's going to
     // annoy the user if he moves the map to reach his target
     if (self.locationDelegate.mostRecentLocation && (!self.didZoomAtStartup || self.targetLocation)) {
-        DDLogDebug(@"Updating map on current's location");
+        NSLog(@"Updating map on current's location");
         [self.mostRecentLocationAnnotation setCoordinate:self.locationDelegate.mostRecentLocation.coordinate];
         
         if (!self.didZoomAtStartup) {
@@ -171,7 +171,7 @@
         self.lastDistance = [self.locationDelegate.mostRecentLocation distanceFromLocation:self.targetLocation];
 
         if (self.lastDistance < 25000 && !self.didAlarmRing) {
-            DDLogInfo(@"LOCAL NOTIFICATION");
+            NSLog(@"LOCAL NOTIFICATION");
             UILocalNotification *notification = [[UILocalNotification alloc] init];
             notification.fireDate = [NSDate date];
             notification.alertBody = @"Wake up!";
