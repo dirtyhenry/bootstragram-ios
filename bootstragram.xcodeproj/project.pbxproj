@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		002510551AADF3BD00175A79 /* BSCoreGraphicsPlaygroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002510461AADF3BD00175A79 /* BSCoreGraphicsPlaygroundViewController.m */; };
 		002510561AADF3BD00175A79 /* BSDaddy.m in Sources */ = {isa = PBXBuildFile; fileRef = 002510481AADF3BD00175A79 /* BSDaddy.m */; };
-		002510571AADF3BD00175A79 /* BSFacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025104A1AADF3BD00175A79 /* BSFacebookViewController.m */; };
 		002510581AADF3BD00175A79 /* BSFunkyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025104C1AADF3BD00175A79 /* BSFunkyView.m */; };
 		002510591AADF3BD00175A79 /* BSGeolocAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025104E1AADF3BD00175A79 /* BSGeolocAlarmViewController.m */; };
 		0025105A1AADF3BD00175A79 /* BSGPUImageDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002510501AADF3BD00175A79 /* BSGPUImageDemoViewController.m */; };
@@ -60,8 +59,6 @@
 		002510461AADF3BD00175A79 /* BSCoreGraphicsPlaygroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCoreGraphicsPlaygroundViewController.m; sourceTree = "<group>"; };
 		002510471AADF3BD00175A79 /* BSDaddy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDaddy.h; sourceTree = "<group>"; };
 		002510481AADF3BD00175A79 /* BSDaddy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDaddy.m; sourceTree = "<group>"; };
-		002510491AADF3BD00175A79 /* BSFacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSFacebookViewController.h; sourceTree = "<group>"; };
-		0025104A1AADF3BD00175A79 /* BSFacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSFacebookViewController.m; sourceTree = "<group>"; };
 		0025104B1AADF3BD00175A79 /* BSFunkyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSFunkyView.h; sourceTree = "<group>"; };
 		0025104C1AADF3BD00175A79 /* BSFunkyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSFunkyView.m; sourceTree = "<group>"; };
 		0025104D1AADF3BD00175A79 /* BSGeolocAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGeolocAlarmViewController.h; sourceTree = "<group>"; };
@@ -195,8 +192,6 @@
 				002510461AADF3BD00175A79 /* BSCoreGraphicsPlaygroundViewController.m */,
 				002510471AADF3BD00175A79 /* BSDaddy.h */,
 				002510481AADF3BD00175A79 /* BSDaddy.m */,
-				002510491AADF3BD00175A79 /* BSFacebookViewController.h */,
-				0025104A1AADF3BD00175A79 /* BSFacebookViewController.m */,
 				0025104B1AADF3BD00175A79 /* BSFunkyView.h */,
 				0025104C1AADF3BD00175A79 /* BSFunkyView.m */,
 				0025104D1AADF3BD00175A79 /* BSGeolocAlarmViewController.h */,
@@ -465,7 +460,6 @@
 				002510591AADF3BD00175A79 /* BSGeolocAlarmViewController.m in Sources */,
 				00D9B97F183B8B89003164F8 /* BSMyContactViewController.m in Sources */,
 				00D9B985183B8F78003164F8 /* NSString+Levenshtein.m in Sources */,
-				002510571AADF3BD00175A79 /* BSFacebookViewController.m in Sources */,
 				00D9B955183B8AFE003164F8 /* main.m in Sources */,
 				002510651AADF3CC00175A79 /* BSUtils.m in Sources */,
 				00D9B95C183B8AFE003164F8 /* bootstragram.xcdatamodeld in Sources */,
