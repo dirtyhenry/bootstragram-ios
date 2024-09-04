@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYA-Cs-gxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716.25" y="-230.28169014084506"/>
+            <point key="canvasLocation" x="1949" y="1930"/>
         </scene>
         <!--Collection View-->
         <scene sceneID="bf0-5X-4s6">
@@ -103,7 +103,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FoN-dF-tZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-934" y="-716"/>
+            <point key="canvasLocation" x="566" y="1931"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="VeJ-7c-MUP">
@@ -120,7 +120,6 @@
                     <connections>
                         <segue destination="cDN-4n-kLK" kind="relationship" relationship="viewControllers" id="e8v-rL-Wr5"/>
                         <segue destination="q72-7Z-dVk" kind="relationship" relationship="viewControllers" id="VTH-gs-ySa"/>
-                        <segue destination="JYa-RC-MaP" kind="relationship" relationship="viewControllers" id="JjX-m6-hy2"/>
                         <segue destination="1rn-qZ-Ugh" kind="relationship" relationship="viewControllers" id="QpL-Ms-wr7"/>
                         <segue destination="xcC-pl-7Vs" kind="relationship" relationship="viewControllers" id="Nie-kP-Mgf"/>
                         <segue destination="4rD-aG-F2P" kind="relationship" relationship="viewControllers" id="fHB-Ko-73Z"/>
@@ -128,7 +127,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woe-ds-YoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1765" y="658"/>
+            <point key="canvasLocation" x="565" y="537"/>
         </scene>
         <!--Geoloc Alarm View Controller-->
         <scene sceneID="PMC-hI-WRc">
@@ -226,26 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oo5-3X-NF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740.625" y="598.94366197183092"/>
-        </scene>
-        <!--Image Demo View Controller-->
-        <scene sceneID="FZ7-Q5-YNE">
-            <objects>
-                <viewController id="JYa-RC-MaP" customClass="BSGPUImageDemoViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xrm-Kb-7th"/>
-                        <viewControllerLayoutGuide type="bottom" id="FOw-FC-ARV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="P3v-mB-DKH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="2ll-Di-mmo"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S9R-JD-Qrg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="740.625" y="1374.2957746478871"/>
+            <point key="canvasLocation" x="3355" y="1930"/>
         </scene>
         <!--Protected-->
         <scene sceneID="kMC-xQ-ADs">
@@ -306,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFx-gA-96a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-86.25" y="1870.7746478873239"/>
+            <point key="canvasLocation" x="-2242" y="1933"/>
         </scene>
         <!--Core Graphics Playground View Controller-->
         <scene sceneID="xg2-gd-hXh">
@@ -325,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="frQ-vC-hTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740.625" y="2149.6478873239435"/>
+            <point key="canvasLocation" x="-859" y="1932"/>
         </scene>
     </scenes>
 </document>

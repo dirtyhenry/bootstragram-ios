@@ -7,20 +7,17 @@ PODS:
     - FBAEMKit (= 12.0.2)
     - FBSDKCoreKit_Basics (= 12.0.2)
   - FBSDKCoreKit_Basics (12.0.2)
-  - GPUImage (0.1.7)
   - MMMarkdown (0.5.5)
 
 DEPENDENCIES:
   - BSGUtilities (from `https://github.com/dirtyhenry/BSGUtilities.git`, branch `main`)
   - FBSDKCoreKit
-  - GPUImage
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FBAEMKit
     - FBSDKCoreKit
     - FBSDKCoreKit_Basics
-    - GPUImage
     - MMMarkdown
 
 EXTERNAL SOURCES:
@@ -38,9 +35,8 @@ SPEC CHECKSUMS:
   FBAEMKit: c6b8ddf8371640fcd1a3b844d0f8884c8f334cea
   FBSDKCoreKit: 506c0fd1c09a3075f62be8fa36bdd921c563daa9
   FBSDKCoreKit_Basics: c0701d1634c944d60dd3c6361d66dbd0e707a456
-  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
 
-PODFILE CHECKSUM: 053618a1571dd7aea31fe2dea073880105c58e7d
+PODFILE CHECKSUM: 3561bd3c18651d28ef7f644decb74ae9e0cc1c2e
 
 COCOAPODS: 1.15.2

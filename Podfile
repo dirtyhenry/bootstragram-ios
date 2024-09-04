@@ -7,7 +7,7 @@ target 'bootstragram' do
   use_frameworks!
 
   # pod 'CocoaLumberjack'
-  pod 'GPUImage'
+  # pod 'GPUImage'
   pod 'FBSDKCoreKit'
   pod 'BSGUtilities', git: 'https://github.com/dirtyhenry/BSGUtilities.git', branch: 'main'
 

@@ -11,7 +11,6 @@
 		002510561AADF3BD00175A79 /* BSDaddy.m in Sources */ = {isa = PBXBuildFile; fileRef = 002510481AADF3BD00175A79 /* BSDaddy.m */; };
 		002510581AADF3BD00175A79 /* BSFunkyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025104C1AADF3BD00175A79 /* BSFunkyView.m */; };
 		002510591AADF3BD00175A79 /* BSGeolocAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025104E1AADF3BD00175A79 /* BSGeolocAlarmViewController.m */; };
-		0025105A1AADF3BD00175A79 /* BSGPUImageDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002510501AADF3BD00175A79 /* BSGPUImageDemoViewController.m */; };
 		0025105B1AADF3BD00175A79 /* BSLocationManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002510521AADF3BD00175A79 /* BSLocationManagerDelegate.m */; };
 		0025105C1AADF3BD00175A79 /* BSMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 002510541AADF3BD00175A79 /* BSMapAnnotation.m */; };
 		002510631AADF3CC00175A79 /* BSProtectedSimulationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0025105E1AADF3CC00175A79 /* BSProtectedSimulationViewController.m */; };
@@ -63,8 +62,6 @@
 		0025104C1AADF3BD00175A79 /* BSFunkyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSFunkyView.m; sourceTree = "<group>"; };
 		0025104D1AADF3BD00175A79 /* BSGeolocAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGeolocAlarmViewController.h; sourceTree = "<group>"; };
 		0025104E1AADF3BD00175A79 /* BSGeolocAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGeolocAlarmViewController.m; sourceTree = "<group>"; };
-		0025104F1AADF3BD00175A79 /* BSGPUImageDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGPUImageDemoViewController.h; sourceTree = "<group>"; };
-		002510501AADF3BD00175A79 /* BSGPUImageDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGPUImageDemoViewController.m; sourceTree = "<group>"; };
 		002510511AADF3BD00175A79 /* BSLocationManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLocationManagerDelegate.h; sourceTree = "<group>"; };
 		002510521AADF3BD00175A79 /* BSLocationManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLocationManagerDelegate.m; sourceTree = "<group>"; };
 		002510531AADF3BD00175A79 /* BSMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMapAnnotation.h; sourceTree = "<group>"; };
@@ -196,8 +193,6 @@
 				0025104C1AADF3BD00175A79 /* BSFunkyView.m */,
 				0025104D1AADF3BD00175A79 /* BSGeolocAlarmViewController.h */,
 				0025104E1AADF3BD00175A79 /* BSGeolocAlarmViewController.m */,
-				0025104F1AADF3BD00175A79 /* BSGPUImageDemoViewController.h */,
-				002510501AADF3BD00175A79 /* BSGPUImageDemoViewController.m */,
 				002510511AADF3BD00175A79 /* BSLocationManagerDelegate.h */,
 				002510521AADF3BD00175A79 /* BSLocationManagerDelegate.m */,
 				002510531AADF3BD00175A79 /* BSMapAnnotation.h */,
@@ -407,7 +402,6 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-bootstragram/Pods-bootstragram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BSGUtilities/BSGUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 				"${BUILT_PRODUCTS_DIR}/MMMarkdown/MMMarkdown.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework/FBAEMKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/FBSDKCoreKit",
@@ -416,7 +410,6 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSGUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMMarkdown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAEMKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
@@ -464,7 +457,6 @@
 				002510651AADF3CC00175A79 /* BSUtils.m in Sources */,
 				00D9B95C183B8AFE003164F8 /* bootstragram.xcdatamodeld in Sources */,
 				002510561AADF3BD00175A79 /* BSDaddy.m in Sources */,
-				0025105A1AADF3BD00175A79 /* BSGPUImageDemoViewController.m in Sources */,
 				0025105C1AADF3BD00175A79 /* BSMapAnnotation.m in Sources */,
 				0059386A1CE63CD400DEA64B /* BSCollectionViewCell.m in Sources */,
 				00D9B959183B8AFE003164F8 /* BSAppDelegate.m in Sources */,
