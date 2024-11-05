@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tq7-Zs-jOZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tq7-Zs-jOZ">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -57,53 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYA-Cs-gxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1949" y="1930"/>
-        </scene>
-        <!--Collection View-->
-        <scene sceneID="bf0-5X-4s6">
-            <objects>
-                <collectionViewController id="4rD-aG-F2P" userLabel="Collection View" customClass="BSCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NHT-3S-reP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zUb-HH-Z9w">
-                            <size key="itemSize" width="176" height="125"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="myCell" reuseIdentifier="myCell" id="eWN-1N-vXJ" customClass="BSCollectionViewCell">
-                                <rect key="frame" x="0.0" y="0.0" width="176" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="176" height="125"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wel-Go-DDb">
-                                            <rect key="frame" x="58" y="48" width="61" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="BUTTON"/>
-                                        </button>
-                                    </subviews>
-                                </view>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="button" destination="wel-Go-DDb" id="C2J-ko-f95"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="4rD-aG-F2P" id="9I7-Cp-KCt"/>
-                            <outlet property="delegate" destination="4rD-aG-F2P" id="13b-V1-Mxv"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Collection" id="z5Z-tV-LUw"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FoN-dF-tZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="566" y="1931"/>
+            <point key="canvasLocation" x="565" y="1932"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="VeJ-7c-MUP">
@@ -122,12 +76,11 @@
                         <segue destination="q72-7Z-dVk" kind="relationship" relationship="viewControllers" id="VTH-gs-ySa"/>
                         <segue destination="1rn-qZ-Ugh" kind="relationship" relationship="viewControllers" id="QpL-Ms-wr7"/>
                         <segue destination="xcC-pl-7Vs" kind="relationship" relationship="viewControllers" id="Nie-kP-Mgf"/>
-                        <segue destination="4rD-aG-F2P" kind="relationship" relationship="viewControllers" id="fHB-Ko-73Z"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woe-ds-YoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565" y="537"/>
+            <point key="canvasLocation" x="-158" y="690"/>
         </scene>
         <!--Geoloc Alarm View Controller-->
         <scene sceneID="PMC-hI-WRc">
@@ -225,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oo5-3X-NF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3355" y="1930"/>
+            <point key="canvasLocation" x="1989" y="1932"/>
         </scene>
         <!--Protected-->
         <scene sceneID="kMC-xQ-ADs">

@@ -1,23 +1,13 @@
 PODS:
   - BSGUtilities (0.5.0):
     - MMMarkdown (~> 0.5.5)
-  - FBAEMKit (12.0.2):
-    - FBSDKCoreKit_Basics (= 12.0.2)
-  - FBSDKCoreKit (12.0.2):
-    - FBAEMKit (= 12.0.2)
-    - FBSDKCoreKit_Basics (= 12.0.2)
-  - FBSDKCoreKit_Basics (12.0.2)
   - MMMarkdown (0.5.5)
 
 DEPENDENCIES:
   - BSGUtilities (from `https://github.com/dirtyhenry/BSGUtilities.git`, branch `main`)
-  - FBSDKCoreKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - FBAEMKit
-    - FBSDKCoreKit
-    - FBSDKCoreKit_Basics
     - MMMarkdown
 
 EXTERNAL SOURCES:
@@ -32,11 +22,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   BSGUtilities: 19f6f6875b4f4d1acb05829c05afba98cdc432a2
-  FBAEMKit: c6b8ddf8371640fcd1a3b844d0f8884c8f334cea
-  FBSDKCoreKit: 506c0fd1c09a3075f62be8fa36bdd921c563daa9
-  FBSDKCoreKit_Basics: c0701d1634c944d60dd3c6361d66dbd0e707a456
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
 
-PODFILE CHECKSUM: 3561bd3c18651d28ef7f644decb74ae9e0cc1c2e
+PODFILE CHECKSUM: eec002b6b49326f6dfeb0e3f350370c72e6a3876
 
 COCOAPODS: 1.15.2

@@ -6,7 +6,6 @@ platform :ios, '11.0'
 target 'bootstragram' do
   use_frameworks!
 
-  pod 'FBSDKCoreKit'
   pod 'BSGUtilities', git: 'https://github.com/dirtyhenry/BSGUtilities.git', branch: 'main'
 
   target 'bootstragramTests' do
