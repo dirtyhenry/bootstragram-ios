@@ -9,8 +9,7 @@
 #import "BSGeolocAlarmViewController.h"
 #import "BSLocationManagerDelegate.h"
 #import "BSMapAnnotation.h"
-#import "BSGArrayDataSource.h"
-
+#import "ArrayDataSource.h"
 
 @interface BSGeolocAlarmViewController ()
 
@@ -25,7 +24,7 @@
 @property (nonatomic) CLLocationDistance lastDistance;
 @property (nonatomic) CLLocationDistance minAltitude;
 @property (nonatomic) CLLocationDistance maxAltitude;
-@property (strong, nonatomic) BSGArrayDataSource *arrayDataSource;
+@property (strong, nonatomic) ArrayDataSource *arrayDataSource;
 
 @end
 
@@ -65,7 +64,7 @@
     self.distanceFormatter = [[MKDistanceFormatter alloc] init];
     self.distanceFormatter.units = MKDistanceFormatterUnitsMetric;
 
-    self.arrayDataSource = [[BSGArrayDataSource alloc] initWithItems:@[@"latitude", @"longitude", @"altitude", @"floor", @"horizontalAccuracy", @"verticalAccuracy", @"timestamp", @"description", @"distanceToAlarm"] cellIdentifier:@"BSGeolocAlarmViewCell" configureCellBlock:^(id cell, id item) {
+    self.arrayDataSource = [[ArrayDataSource alloc] initWithItems:@[@"latitude", @"longitude", @"altitude", @"floor", @"horizontalAccuracy", @"verticalAccuracy", @"timestamp", @"description", @"distanceToAlarm"] cellIdentifier:@"BSGeolocAlarmViewCell" configureCellBlock:^(id cell, id item) {
         UITableViewCell *myCell = (UITableViewCell *)cell;
         NSString *fieldName = (NSString *)item;
 

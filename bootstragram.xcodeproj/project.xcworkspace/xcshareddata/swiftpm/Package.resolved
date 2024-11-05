@@ -1,0 +1,15 @@
+{
+  "originHash" : "e70ccb29ec1b34f15ce1a251ccc284df1410c5da04d6939f1bbab3583da591c4",
+  "pins" : [
+    {
+      "identity" : "swift-blocks",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dirtyhenry/swift-blocks",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2c47ca0be2795ca03fb4078f4e470f8583ac4553"
+      }
+    }
+  ],
+  "version" : 3
+}
